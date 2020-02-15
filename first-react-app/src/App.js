@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SearchBar, ProductTable, products } from './components';
+import { SearchBar, ProductTable, ProductCategoryRow, ProductRow, FilterableProductTable, products } from './components';
 
 
 
 function App() {
   return (
-    <div>
-      <SearchBar/>
+    <div> 
+      <div>
+        <ProductTable/>
+      </div>
     </div>
   );
 }
-
 
 export default App;
 
