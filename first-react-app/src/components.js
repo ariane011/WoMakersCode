@@ -40,19 +40,19 @@ export class ProductTable extends React.Component {
 
         let rows = [], lastCategory = null;
 
-    products.map((product) => {
-        if (!product.name.toLowerCase().includes(filterText.toLowerCase()) || (!product.stocked && inStockOnly)) {
-            return;
-        }
+    //  products.map((product) => {
+    //      if (!product.name.toLowerCase().includes(filterText.toLowerCase()) || (!product.stocked && inStockOnly)) {
+    //          return;
+    //      }
 
-        if (product.category !== lastCategory) {
-            rows.push(<ProductCategoryRow category={product.category} key={product.category}/>);
-        }
+    //      if (product.category !== lastCategory) {
+    //          rows.push(<ProductCategoryRow category={product.category} key={product.category}/>);
+    //      }
 
-        rows.push(<ProductRow product={product} key={product.name}/>);
-        lastCategory = product.category;
+    //      rows.push(<ProductRow product={product} key={product.name}/>);
+    //      lastCategory = product.category;
 
-    });
+    //  });
 
     if (rows.length > 0) {
       return (
@@ -74,62 +74,55 @@ export class ProductTable extends React.Component {
 
 
 
-// export class SearchBar extends React.Component {
-//   render() {
-//     const filterText = this.props.filterText;
-//     const inStockOnly = this.props.inStockOnly;
+ class SearchBar extends React.Component {
+   render() {
+     const filterText = this.props.filterText;
+     const inStockOnly = this.props.inStockOnly;
 
-//     return (
-//       <form>
-//         <input
-//           type="text"
-//           placeholder="Search..."
-//           value={filterText} />
-//         <p>
-//           <input
-//             type="checkbox"
-//             checked={inStockOnly} />
-//           {' '}
-//           Only show products in stock
-//         </p>
-//       </form>
-//     );
-//   }
-// }
+     return (
+       <form>
+         <input
+           type="text"
+           placeholder="Search..."
+           value={filterText} />
+         <p>
+           <input
+             type="checkbox"
+             checked={inStockOnly} />
+           {' '}
+           Only show products in stock
+         </p>
+       </form>
+     );
+   }
+ }
 
-// export class FilterableProductTable extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       filterText: '',
-//       inStockOnly: false
-//     };
-//   }
+ export class FilterableProductTable extends React.Component {
+   constructor(props) {
+     super(props);
+     this.state = {
+       filterText: '',
+       inStockOnly: false
+     };
+   }
 
-//   render() {
-//     return (
-//       <div>
-//         <SearchBar
-//           filterText={this.state.filterText}
-//           inStockOnly={this.state.inStockOnly}
-//         />
-//         <ProductTable
-//           products={this.props.products}
-//           filterText={this.state.filterText}
-//           inStockOnly={this.state.inStockOnly}
-//         />
-//       </div>
-//     );
-//   }
-// }
+   render() {
+     return (
+       <div>
+         <SearchBar
+           filterText={this.state.filterText}
+           inStockOnly={this.state.inStockOnly}
+         />
+         <ProductTable
+           products={this.props.products}
+           filterText={this.state.filterText}
+           inStockOnly={this.state.inStockOnly}
+         />
+       </div>
+     );
+   }
+ }
 
 
-export default = [
-  {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
-  {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
-  {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
-  {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
-  {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
-  {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
-];
+
 

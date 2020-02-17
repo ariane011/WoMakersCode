@@ -1,15 +1,20 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SearchBar, ProductTable, ProductCategoryRow, ProductRow, FilterableProductTable, products } from './components';
-
-
+import { FilterableProductTable } from './components';
+import { PRODUCTS } from './mock'
+import FormImput from './components/Form/FormInput';
+import List from './components/List';
 
 function App() {
+  console.log(''>>>'', PRODUCTS);
   return (
     <div> 
       <div>
-        <ProductTable/>
+        <form>
+          <input>
+          </input>
+        </form>
       </div>
     </div>
   );
