@@ -3,7 +3,7 @@ import { FormPage } from "./components/FormPage/index";
 import "./App.css";
 
 function App() {
-  return <FormPage />;
+  return <FormPage  />;
 }
 
 export default App;

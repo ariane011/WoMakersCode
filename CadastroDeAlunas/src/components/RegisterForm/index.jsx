@@ -28,6 +28,11 @@ export class RegisterForm extends React.Component {
     }
   };
 
+    onSubmit = (event) => {
+      event.preventDefault();
+      console.log(this.state);
+    }
+
   render() {
     return (
       <form onSubmit={this.handleSubmitForm}>
@@ -65,7 +70,7 @@ export class RegisterForm extends React.Component {
           handleChange={this.handleChange}
           name="phone"
         />
-        <button type="submit">Increver</button>
+        <button onClick={this.onSubmit} type="button">Increver</button>
       </form>
     );
   }
