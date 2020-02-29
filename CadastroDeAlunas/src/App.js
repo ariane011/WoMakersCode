@@ -1,6 +1,6 @@
 import React from "react";
 import { FormPage } from "./components/FormPage/index";
-import "./App.css";
+import "materialize-css/dist/css/materialize.min.css";
 
 function App() {
   return <FormPage  />;

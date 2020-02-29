@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "materialize-css/dist/css/materialize.min.css";
 
 export const FormInput = ({
   label,
