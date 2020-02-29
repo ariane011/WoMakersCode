@@ -1,7 +1,7 @@
 import { CLICK_UPDATE_VALUE } from '../actions/actionsTypes';
 
 const initialState = {
-    newValue: 'coisa'
+    newValue: 'Atualizando via Redux!'
 };
 
 export const clickReducer = (state = initialState, action) =>
