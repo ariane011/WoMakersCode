@@ -20,7 +20,7 @@ export class RegisterForm extends React.Component {
 
   handleSubmitForm = event => {
     console.log("Estou aqui no handler do submit")
-    //event.preventDefault();
+    event.preventDefault();
     const { name, city, email, cpf, phone } = this.state;
     if (!this.validateEmail(email)) {
       return alert("Por favor insira um e-mail válido.");
@@ -28,10 +28,6 @@ export class RegisterForm extends React.Component {
     if (!name || !city || !email || !cpf || !phone) {
       return alert("Por favor, preencha todos os campos");
     }
-    this.onSubmit = (event) => {
-      event.preventDefault();
-      console.log(this.state);
-  }
   };
   render() {
     return (
@@ -71,10 +67,10 @@ export class RegisterForm extends React.Component {
           name="phone"
         />
         <SubmitButton
-        onClick={this.onSubmit} 
-        type="button"
+         type="submit" 
+         value="Inscrever"
         />
       </form>
     );
-  }
+    }
 }

@@ -3,12 +3,12 @@ import "materialize-css/dist/css/materialize.min.css";
 
 export const SubmitButton = ({
   
-  onSubmit,
+  value,
   type
 
 }) =>  {
 
     return (
-      <button className="btn waves-effect waves-light" onClick={onSubmit} type={type}>Inscrever</button>
+      <input className="btn waves-effect waves-light" type={type} value={value} />
     );
 }
