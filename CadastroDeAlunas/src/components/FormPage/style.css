@@ -5,7 +5,7 @@
 .container {
   background-color: white;
   width:750px;
-  box-shadow: 5px -10px 8px #888888;
+  box-shadow: 5px -10px 8px #888888, -0.2em 0 0.4em #888888;
 }
 
 .form-input-container {
