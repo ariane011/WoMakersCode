@@ -1,3 +1,45 @@
+.principal {
+  background-color: rgb(159, 158, 211);
+}
+
 .container {
-  padding: 8px;
+  background-color: white;
+  width:750px;
+  box-shadow: 5px -10px 8px #888888;
+}
+
+.form-input-container {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+#banner {
+  background-size: cover;
+  height: 30vh;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(banner.jpg);
+
+}
+
+.subtitulo {
+  font-family: "Open Sans Condensed", "Arial", sans-serif, bold;
+  font-size: 40px;
+  color: #fff;
+  text-indent: 3.0em;
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+
+#button {
+  position: relative;
+  left: 2.5%;
+  padding: 15px 0;
 }

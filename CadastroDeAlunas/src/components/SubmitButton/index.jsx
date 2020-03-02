@@ -9,6 +9,8 @@ export const SubmitButton = ({
 }) =>  {
 
     return (
-      <input className="btn waves-effect waves-light" type={type} value={value} />
+      <div id="button">
+          <input className="btn waves-effect waves-light" type={type} value={value} />
+      </div>
     );
 }
