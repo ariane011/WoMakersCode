@@ -41,6 +41,8 @@ const mapStateToProps = store => ({
   newValue: store.clickState.newValue
 });
 
+const mapDispathToProps = dispath
+
 export default connect(mapStateToProps)(App);
 
 
