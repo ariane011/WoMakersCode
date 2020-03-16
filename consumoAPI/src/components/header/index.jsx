@@ -5,7 +5,7 @@ import logo from './logo.png'
 const Header = () => (
 
         <div>
-            <img src={logo} align="center" ></img>
+            <img src={logo} style width></img>
         </div> 
     )
 

@@ -10,12 +10,6 @@
     color: #666;
     background: #F6F6F6;
   }
-
-  img {
-    position: relative;
-    left: 50%;
-    right: 50%;
-  }
   
   #root {
     max-width: 1200px;
