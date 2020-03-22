@@ -29,6 +29,7 @@ class AddressForm extends React.Component{
     }
 
     handleChange = async (field) => {
+        
         const { name, value } = field
         this.setState({[name]: value, error:false})
         if(name === 'cep' && value.length ===8 ){
@@ -67,7 +68,7 @@ class AddressForm extends React.Component{
                     <Form style={{textAlign: 'left'}}>
                         <FormGroup>
                             <Label for="cep">CEP</Label>
-                            <Input invalid={error.true} name="cep" value={cep} onChange={e => this.handleChange(e.target)} onBlur={e => this.handleChange(e.target.value)} maxLength={9} />
+                            <Input invalid={error.true} name="cep" replace="00000000" value={cep} onChange={e => this.handleChange(e.target)} onBlur={e => this.handleChange(e.target.value)} maxLength={9} />
                             <FormFeedback invalid={error.true}>Error</FormFeedback>
                         </FormGroup>
                         <FormGroup>
