@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Baloo+Chettan+2&display=swap');
+
+.App {
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgb(128, 84, 211);
+  }
+
+  .principal {
+    position: absolute;
+    padding-top: 3%;
+    padding-left: 30%;
+    width: 750px;
+  }
+  
+  .json, pre {
+    text-align: center;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: bold;
+    color: rgb(158, 112, 139);
+    background-color: rgb(221, 221, 221);
+  }
