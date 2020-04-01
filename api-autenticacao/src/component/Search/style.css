@@ -1,0 +1,15 @@
+.form {
+    align-items: center;
+    position: absolute;
+    padding-top: 3%;
+    padding-left: 27%;
+    width: 80%;
+  }
+  
+  .form, button{
+    display: flex;
+  }
+  
+  .form button{
+    margin-left: 10px;
+  }
