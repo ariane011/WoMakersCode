@@ -17,7 +17,7 @@ Link: https://ghibliapi.herokuapp.com/films
 Foi refatorada uma classe para função
 
 ### :clipboard: Todo List
-Todo List feita em Redux
+Todo List feita em Redux, 
 Documentação: [https://redux.js.org/basics/example/](https://redux.js.org/basics/example/)
 
 ### :bus: React Router
@@ -28,3 +28,4 @@ Aplicação na qual o usuário vai inserir um texto e clicar em pesquisar, abaix
 
 ### :pencil: Formik
 Formulário utilizando o formik
+Tutorial: https://medium.com/@yuriwtoledo/formik-hooks-api-oficial-a79f803970a1
