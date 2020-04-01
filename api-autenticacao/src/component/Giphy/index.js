@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Gif } from "@giphy/react-components";
+import './style.css'
 
-
-function Giphy() {
+function Giphy(props) {
   const [gifs, setGifs] = useState(null);
   const key = 'rpSqiCBrjaPKVxPMjVaUIKk6BuBSkTUb'
-  const query = "car"
+  const query = props.search
   const limit = 1
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Giphy() {
     <div>
       { gifs
         && gifs.data.map(gif => {
-          return <Gif gif={gif} width={600} />
+          return <div className="gif"> <Gif key={gif.id} gif={gif} width={600} /> </div>
         })
       }
     </div>
